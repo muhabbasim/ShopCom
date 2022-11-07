@@ -1,0 +1,92 @@
+@font-face {
+    font-family: stol book;
+    src: url(font/Stolzl\ Book.otf);
+}
+@font-face {
+    font-family: stol light;
+    src: url(font/Stolzl\ Light.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: stol light;
+}
+.h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+.h6 {
+    color: rgb(201, 199, 199);
+}
+button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease;
+}
+button:hover {
+    background-color: rgb(66, 66, 66);
+}
+.navbar {
+    font-size: 16px;
+}
+.navbar .navbar-nav .nav-link {
+    padding: 0px 15px;
+    color: rgb(0, 0, 0);
+    transition: .3s ease;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar svg:hover,
+.navbar .navbar-nav .nav-link.active,
+.navbar svg.active {
+    color: coral;
+    fill: coral;
+}
+.navbar svg {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: .3s ease;
+    margin-left: 10px;
+}
+
+#home span {
+    color: coral;
+}
+#home {
+    background-image: url(img/banners/home\ pic.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top center; /* from top 60px, from left and right center*/
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
