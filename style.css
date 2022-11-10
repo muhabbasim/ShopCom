@@ -106,29 +106,9 @@ hr {
     color: rgb(255, 255, 255);
     transition: .3s ease;
 }
-@media only screen and (max-width: 991px) {
 
-    body > header > nav > div > button:hover, 
-    body > header > nav > div > button:focus {
-        background-color: coral;
 
-    } 
-
-    #navbarSupportedContent > ul { 
-        margin: 1rem;
-        /* justify-content: flex-end; */
-        align-items: flex-end;
-        text-align: right;
-    }
-    #navbarSupportedContent > ul > li:nth-child(n) > a {
-        padding: 10px 0;
-    }
-}
-@media only screen and (max-width: 600px) {
-    body > header > nav > div {
-        margin: 0 20px;
-    }
-}
+/* home section   */
 #home span {
     color: coral;
 }
@@ -143,6 +123,7 @@ hr {
     align-items: center;
     margin-bottom: 100px;
 }
+/* new product  */
 #new-pro .one img {
     width: 100%;
     height: 100%;
@@ -294,4 +275,419 @@ footer .copyright  a {
 footer .copyright  a:hover {
     color: white;
     background-color: rgb(252, 173, 145);
+}
+
+/*------------------ blog section ------------------ */
+
+#blog-head-banner {
+    background-image: url(img/blog/clem-onojeghuo-iuvLYv85r40-unsplash.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#blog-head-banner h4 {
+    color: white;
+    font-size: 20px;
+}
+#blog-head-banner h1 {
+    color: white;
+}
+#blog-head-banner button {
+    background-color: coral;
+}
+#blog {
+    padding: 150px 150px 0 150px;
+    position: relative;
+}
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#blog .blog-img {
+    width: 50%;
+    margin-right: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#blog img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: .3s ease;
+}
+
+#blog img:hover {
+    transform: scale(1.2) rotate(-10deg);
+    opacity: .7;
+}
+#blog .blog-box h2 {
+    transition: .3s ease;
+}
+#blog .blog-box:hover h2 {
+    color: coral;
+    opacity: .7;
+}
+
+#blog .blog-details {
+    width: 50%;
+    padding-right: 40px;
+}
+#blog h1 {
+    position: absolute;
+    top: 110px;
+    font-size: 60px;
+    color: rgb(210, 210, 210);
+    z-index: -1;
+}
+.first-blog h1,
+.third-blog h1 {
+    right: 200px;
+    top: 0px;
+}
+#blog p {
+    color: rgb(125, 124, 124);
+}
+#blog .blog-details a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: .3s ease;
+}
+#blog .blog-details h2 {
+    margin-bottom: 30px;
+}
+#blog .blog-details a:hover {
+    text-decoration: none;
+    color: coral;
+}
+#blog .blog-details a:hover:after {
+    background-color: coral;
+}
+#blog .blog-details a::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    right: -60px;
+    transition: .3s ease;
+}
+
+
+/*------------------ cart section ------------------ */
+#cart-head-banner {
+    background-image: url(img/blog/blog\ banner1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#cart-head-banner h4 {
+    color: white;
+    font-size: 20px;
+}
+#cart-head-banner h1 {
+    color: white;
+}
+#cart-head-banner button {
+    background-color: coral;
+}
+
+/* table  */
+
+#cart-container {
+    overflow-x: auto;
+}
+#cart-container table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart-container table thead {
+    font-weight: 700;
+}
+#cart-container table thead td {
+    background-color: rgb(255, 157, 122);
+    color: white;
+    border: none;
+    padding: 7px 0;
+}
+#cart-container table td {
+    border: 1px solid rgb(227, 227, 227);
+    text-align: center;
+}
+
+#cart-container table td:nth-child(1) {
+ width: 100px;
+}
+#cart-container table td:nth-child(2), 
+#cart-container table td:nth-child(3) {
+ width: 200px;
+}
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6) {
+ width: 170px;
+}
+
+#cart-container table tbody img {
+    width: 70px;
+}
+#cart-container table tbody i {
+    color: rgb(122, 122, 122);
+} 
+#cart-container table tbody input {
+    outline: none;
+} 
+#cart-bottom .total > div,
+#cart-bottom .coupon > div {
+    border: 1px solid rgb(227, 227, 227);
+
+}
+#cart-bottom .coupon h5,
+#cart-bottom .total h5 {
+    background-color: rgb(255, 157, 122);
+    color: white;
+    border: none;
+    padding: 7px 12px;
+}
+#cart-bottom .coupon p {
+    padding: 0 12px;
+}
+#cart-bottom .coupon input {
+    height: 44px;
+    padding: 0 12px;
+    margin: 0 0 20px 12px;
+}
+#cart-bottom .coupon button {
+    margin: 0 0 20px 12px;
+}
+#cart-bottom .total div>div {
+    padding: 0 12px;
+}
+#cart-bottom .total h6 {
+    color: black;
+}
+.second-hr {
+    background-color: rgb(227, 227, 227);
+    width: 100%;
+}
+#cart-bottom .total div > button {
+    margin: 0 12px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ------------- contact us section ----------- */
+#contact-head-banner {
+    background-image: url(img/banners/contact\ head\ banner.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#contact-head-banner h4 {
+    color: white;
+    font-size: 20px;
+}
+#contact-head-banner h1 {
+    color: white;
+}
+#contact-head-banner button {
+    background-color: coral;
+}
+
+#contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+#contact-details .details {
+    width: 40%;
+}
+#contact-details .details span,
+#form-details form span {
+    font-size: 30px;
+    color: coral;
+}
+#form-details form h2,
+#contact-details .details h2 {
+    margin-top: 20px;
+}
+#contact-details .details h3 {
+    margin: 20px 0;
+    color: coral;
+}
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+#contact-details .details li i {
+    padding-right: 20px;
+}
+#contact-details .details li p {
+    font-size: 16px;
+    color: rgb(118, 118, 118);
+    margin: 0;
+}
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid rgb(227, 227, 227);
+}
+#form-details form h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+#form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form textarea,
+#form-details form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid rgb(227, 227, 227);
+}
+#form-details form button {
+    background-color: coral;
+}
+#form-details .people div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+#form-details .people div img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}   
+#form-details .people div p {
+    margin: 0;
+    line-height: 25px;
+    font-size: 15px;
+    color: rgb(142, 142, 142);
+}
+#form-details .people div span {
+    display: block;
+    font-size: 20px;
+    color: black;
+}
+
+@media only screen and (max-width: 991px) {
+
+    body > header > nav > div > button:hover, 
+    body > header > nav > div > button:focus {
+        background-color: coral;
+
+    } 
+
+    #navbarSupportedContent > ul { 
+        margin: 1rem;
+        /* justify-content: flex-end; */
+        align-items: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a {
+        padding: 10px 0;
+    }
+}
+@media only screen and (max-width: 799px) {
+    body > header > nav > div {
+        margin: 0 20px;
+    }
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog {
+        padding: 100px 20px 0 20px;
+        position: relative;
+    }
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #blog .blog-details {
+        width: 100%;
+        margin-right: 40px;
+    }
+
+    /* contact page  */
+    #form-details form {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 599px) {
+    #contact-details {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+    #contact-details .details {
+        width: 90%;
+    }
+    #contact-details .map {
+        width: 90%;
+        height: 400px;
+        margin-top: 30px;
+    }
+    #form-details {
+        flex-wrap: wrap;
+        margin: 30px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid rgb(227, 227, 227);
+    }
+    #form-details form {
+        width: 90%;
+    }
+    .people {
+        margin-top: 50px;
+    }
+  
 }

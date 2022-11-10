@@ -1,28 +1,27 @@
 
-// // -------------------- product details js --------------------
-// let mainImg = document.getElementById('main-img');
-// let subImgs = document.getElementsByClassName('small-img');
-// console.log(mainImg, subImgs);
+// -------------------- product details js --------------------
+let mainImg = document.getElementById('main-img');
+let subImgs = document.getElementsByClassName('small-img');
+console.log(mainImg.src);
+console.log(subImgs[1]);
 
-// // trget the index number of each img 
+for(var i = 0; i < subImgs.length; i++) {
+  subImgs[i].addEventListener('click', changeSrc);
+   
+}
+
+
+function changeSrc(event){
+  let subImgsClicked = event.target;
+  mainImg.src = subImgsClicked.src;
+
+}
+
+
 // subImgs[0].onClick = function() {
-//   mainImg.src = subImgs[0].src;
+//   mainImg.src = subImgs[1].src;
+//   console.log(312)
 // }
 // subImgs[1].onClick = function() {
 //   mainImg.src = subImgs[1].src;
 // }
-
-
-
-
-
-// for(var i = 0; i < subImgs.length; i++) {
-//   subImgs[i].addEventListener('click', () => {
-//     let img = subImgs[i].attributes.src;
-//     // let imgSrc = img.attributes.src
-//     console.log(imgSrc)
-//     // mainImg.src = subImgs[i].src;
-
-//   })
-// }
-
